@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainContent{
+    width: 100%;
+    margin-top: 20px;
+}
+.total  {
+    width: 150px;
+    border: solid 1px gray;
+    margin-left: 20px;
+    padding-left: 140px;
+    background-color: darkblue;
+    color: white;
+   
+}
+
+.sopra{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "piu meno per divisione" ;
+    width: 150px;
+    margin-left: 20px;
+    border-top: solid 1px gray;
+    border-right: solid 1px gray;
+    border-left: solid 1px gray;
+    background-color: lightblue;
+
+}
+.calculator {
+    display: grid;
+    border: solid 1px gray;
+    margin-left: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero1 point canc equal";
+    width: 150px;
+    
+}
+.piu{
+    grid-area: piu;
+    border-right: solid 1px gray;
+    padding-left: 10px;
+}
+.meno{
+   grid-area: meno;
+   border-right: solid 1px gray;
+   padding-left: 10px;
+}
+.per{
+    grid-area: per;
+    border-right: solid 1px gray;
+    padding-left: 10px;
+}
+.divisione {
+    grid-area: divisione;
+    padding-left: 13px;
+    
+}
+
+
+
+
+.seven{
+    grid-area: seven;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.eight{
+    grid-area: eight;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.nine {
+    grid-area: nine;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.four{
+    grid-area: four;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.five{
+    grid-area: five;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.six {
+    grid-area: six;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.one {
+    grid-area: one;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.two{
+    grid-area: two;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.three{
+    grid-area: three;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.zero{
+    grid-area: zero1;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.point{
+    grid-area: point;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 15px;
+}
+.canc {
+    grid-area: canc;
+    border-bottom: solid 1px gray;
+    border-right: solid 1px gray;
+    padding-left: 7px;
+}
+.equal{
+    grid-area: equal;
+    padding-left: 10px;
+    padding-top: 25px;
+    background-color: pink;
+    
+}
