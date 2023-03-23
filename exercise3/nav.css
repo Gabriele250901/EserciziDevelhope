@@ -40,20 +40,48 @@ nav{
 
 
 
-@media only screen and (max-width:768px) {
+@media  screen and (max-width:768px) {
     nav{
         background-color: aqua;
-
+        height: 30%;
+        
     }
     .navbar ul {
+        padding: 0px;
+    }
+    .navbar ul li:nth-child(2){
+       padding-top: 10px;
+    }
+    
+    .navbar ul li:nth-child(8){
         display: none;
     }
+    .navbar ul li:nth-child(3){
+        display: none;
+    }
+    .navbar ul li:nth-child(4){
+        display: none;
+    }
+    .navbar ul li:nth-child(5){
+        display: none;
+    }
+    .navbar ul li:nth-child(6){
+        display: none;
+    }
+    .navbar ul li:nth-child(7){
+        display: none;
+    }
+    
+    
     .hamburger div{
         width: 40px;
         height: 10px;
         background-color: black;
         margin: 5px 0px;
         margin-left: 10px;
+        display: flex;
+       
+        
     }
-
+    
 }
