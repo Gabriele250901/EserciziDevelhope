@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: solid 1px red;
+  margin: 10px 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: green;
+  text-decoration: underline blue;
+}
+
+.content {
+  display: flex;
+  border: solid 1px green;
+  margin: 10px;
+}
+
+.content p {
+  border-right: solid 2px green;
+  padding: 40px;
+}
+
+#even {
+  color: red;
+}
+
+#odd {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
