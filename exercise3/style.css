@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.container {
+  border: solid 2px red;
+  margin: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: green;
+  text-decoration: underline blue;
+}
+
+.content {
+  display: flex;
+  margin: 10px;
+}
+
+#even {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+  border: solid 1px green;
+  padding: 40px;
+}
+
+#odd {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  border: solid 1px green;
+  padding: 40px;
+}
+
+.footer {
+  color: green;
+  border-color: blue;
+  font-size: 1rem;
+  border: solid 1px blue;
+  padding: 40px;
+}
+
+.footer {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
