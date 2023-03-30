@@ -1,0 +1,76 @@
+@use "color.scss";
+@use "rem.scss" as f;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: f.rem(16px);
+}
+
+@mixin article-card($color,$border-color) {
+    color: $color;
+    border-color: $border-color;
+    font-size: f.rem(16px);
+    border: solid 1px $border-color;
+    padding: 40px;
+
+}
+.container {
+    border: solid 2px color.$color-primary;
+    margin: 10px;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: color.$color-ternary;
+    text-decoration: underline color.$color-secondary;
+    padding-bottom: 10px
+
+}
+.test{
+    &_title {
+        @extend .title;
+    }
+   
+    
+}
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: color.$color-ternary ;
+    border: solid 1px color.$color-primary;
+    padding: 1rem;
+    margin: 0 550px;
+}
+.test1{
+    
+    &_subtitle{
+        @extend .subtitle;
+    }
+}
+.content {
+    display: flex;
+    margin: 10px;
+}
+
+#even {
+    @include article-card(color.$color-primary,color.$color-ternary);
+}
+#odd {
+    @include article-card(color.$color-secondary,color.$color-ternary);
+}
+
+.footer {
+    @include article-card(color.$color-ternary, color.$color-secondary)
+    
+};
+.footer {
+    margin: 10px;
+    font-size: f.rem(24px);
+}
