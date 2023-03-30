@@ -1,0 +1,109 @@
+@use "color1.scss";
+@use "rem.scss" as f;
+@use "sass:color";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: f.rem(16px);
+}
+
+@mixin article-card($color, $border-color) {
+  color: $color;
+  border-color: $border-color;
+  font-size: f.rem(16px);
+  border: solid 1px $border-color;
+  padding: 40px;
+}
+.container {
+  border: solid 2px color1.$color-primary;
+  margin: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: color1.$color-ternary;
+  text-decoration: underline color1.$color-secondary;
+  padding-bottom: 10px;
+}
+.test {
+  &_title {
+    @extend .title;
+  }
+}
+.subtitle {
+  display: flex;
+  justify-content: center;
+  color: color1.$color-ternary;
+  border: solid 1px color1.$color-primary;
+  padding: 1rem;
+  margin: 0 550px;
+}
+.test1 {
+  &_subtitle {
+    @extend .subtitle;
+  }
+}
+.content {
+  display: flex;
+  margin: 10px;
+}
+
+#even {
+  @include article-card(color1.$color-primary, color1.$color-ternary);
+}
+#odd {
+  @include article-card(color1.$color-secondary, color1.$color-ternary);
+}
+
+.footer {
+  @include article-card(color1.$color-ternary, color1.$color-secondary);
+}
+.footer {
+  margin: 10px;
+  font-size: f.rem(24px);
+}
+
+.number {
+  display: flex;
+  justify-content: space-between;
+}
+
+$baseColor: #ffffff;
+$textColor:black;
+
+@for $var from 1 to 20 {
+  .number div:nth-child(#{$var}) {
+    border: solid 1px red;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: darken($baseColor, $var * 5%);
+    color: lighten($textColor, $var * 5%);
+    
+    @if $var == 10 {
+      background-color: blue;
+      color: red;
+    }
+  }
+}
+
+  
+
+
+$font-size: 1rem 2rem 3rem;
+
+@each $size in $font-size {
+  .fs-#{$size} {
+    font-size: $size;
+    
+  }
+}
+

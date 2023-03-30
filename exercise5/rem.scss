@@ -1,0 +1,4 @@
+@function rem($number) {
+    $rem : calc($number/16px) + rem;
+    @return $rem;
+}
