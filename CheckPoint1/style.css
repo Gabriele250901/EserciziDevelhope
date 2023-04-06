@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 5vh;
+}
+.navCont {
+    display: flex;
+   
+}
+.navCont h2 {
+    color: blue;
+    width: 40%;
+    padding-left: 40px;
+    font-size: 30px;
+}
+.navCont nav ul {
+    display: flex;
+    gap: 1rem;
+   align-items: center;
+    
+
+}
+.navCont nav ul li {
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.navCont nav ul li button {
+    display: flex;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.mainCont {
+    width: 100%;
+    height: 65vh;
+}
+.all   {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.text h1 {
+    font-size: 100px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.text p {
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.text #primo {
+    padding: 10px;
+    background-color: blue;
+    border-radius: 20%;
+    color: white;
+    border: none;
+
+}
+.text #secondo {
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    border-color: blue;
+    border-radius: 20%;
+}
+
+.footerCont {
+    width: 100%;
+    height: 35vh;
+}
+
+.footerAll h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+.card1 {
+    
+    width: 30%;
+    height: 150px;
+    background-color: rgb(167, 167, 245);
+    border: 1px solid rgb(167, 167, 245);
+    margin-left: 40px;
+    border-radius: 5%;
+}
+.card1 h5{
+    display: flex;
+    font-size: 25px;
+    gap: 1rem;
+    padding:20px;
+
+}
+.card1 p {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.card1 button {
+    
+    border: none;
+    border-radius: 20%;
+    padding-right: 10px;
+}
+.card1 button span {
+    font-weight: bold;
+}
+
