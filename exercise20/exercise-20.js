@@ -22,7 +22,7 @@ class AreaCalculator {
     if( value instanceof Square){
       this.value = value.side * value.side;
     }else if (value instanceof Rectangle){
-      this.value= value.height * value.width / 2;
+      this.value= value.height * value.width ;
     }else if ( value  instanceof  Circle){
       this.value = (value.radius * value.radius)* Math.PI;
     }else{
