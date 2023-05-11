@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Species{
+        constructor(name, language,average_lifespan){
+            this.name = name
+            this.language = language
+            this.average_lifespan = average_lifespan
+        }
+        static checkSpecies(obj){
+         let {name,language,average_lifespan} = obj 
+        
+        
+         return new Species(
+                name  , 
+                language , 
+                average_lifespan)
+        }
+    }
+    
+    fetch("https://swapi.dev/api/species/")
+    .then((res)=> res.json())
+    .then((json)=> json.results)
+    .then(mapClass)
+    .then(allNames)
+    // .then(filterLang)
+    .then(console.log)
+
+    function mapClass(data) {
+      return  data.map((el)=>{
+       return Species.checkSpecies({name : el.name , language : el.language, average_lifespan : el.average_lifespan})
+        })
+    }
+    // function filterLang(data2){
+    //     return data2.filter((el)=> el.language === 'n/a')
+    // }
+
+    // function allNames(data3){
+    //     data3.forEach(element => {
+    //         console.log(element.name);
+    //     });
+    // }
+    function allNames(data3){
+     return data3.reduce((acc,curr)=> acc + curr.name , "");
+
+    }
+</script>
+</html>
