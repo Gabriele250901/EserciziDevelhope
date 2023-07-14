@@ -15,7 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "joi": "^17.9.2"
+    "joi": "^17.9.2",
+    "tsc": "^2.0.4"
   },
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",
